@@ -1,0 +1,119 @@
+.mst-config #seo_general td.scope-label,
+.mst-config #seo_extended td.scope-label,
+.mst-config #seo_snippets td.scope-label,
+.mst-config #seo_url td.scope-label,
+.mst-config #seo_image td.scope-label,
+.mst-config #seo_info td.scope-label {
+    width: 100px !important;
+    text-align: right;
+}
+
+.mst-config #seo_general .grid,
+.mst-config #seo_extended .grid,
+.mst-config #seo_snippets .grid,
+.mst-config #seo_url .grid,
+.mst-config #seo_image .grid,
+.mst-config #seo_info .grid {
+    width: auto !important;
+}
+
+.mst-config #seo_general_robots_editor.textarea,
+.mst-config #seo_general_canonical_url_ignore_pages.textarea {
+    max-width: 507px;
+}
+
+.mst-config #seo_general .hint,
+.mst-config #seo_extended .hint,
+.mst-config #seo_snippets .hint,
+.mst-config #seo_url .hint,
+.mst-config #seo_image .hint,
+.mst-config #seo_info .hint {
+    margin-left: 15px;
+}
+
+.mst-config #row_seo_general_hreflang_locale_code td.scope-label {
+    left: 105px !important;
+    float: right;
+}
+.mst-config #row_seo_general_hreflang_locale_code td div.hint {
+    margin-left: 120px;
+}
+
+#row_seo_snippets_rich_snippets_payment_method .label label,
+#row_seo_snippets_rich_snippets_delivery_method  .label label,
+#row_seo_snippets_rich_snippets_product_category .label label,
+#row_seo_snippets_rich_snippets_brand_config .label label,
+#row_seo_snippets_rich_snippets_model_config .label label,
+#row_seo_snippets_rich_snippets_color_config .label label,
+#row_seo_snippets_rich_snippets_weight_config .label label,
+#row_seo_snippets_rich_snippets_dimensions_config .label label,
+#row_seo_snippets_rich_snippets_product_condition_config .label label {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+#row_seo_snippets_rich_snippets_dimensional_unit .label label,
+#row_seo_snippets_rich_snippets_height_config .label label,
+#row_seo_snippets_rich_snippets_width_config .label label,
+#row_seo_snippets_rich_snippets_depth_config .label label {
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+#row_seo_snippets_rich_snippets_product_condition_attribute .label label,
+#row_seo_snippets_rich_snippets_product_condition_new .label label,
+#row_seo_snippets_rich_snippets_product_condition_used .label label,
+#row_seo_snippets_rich_snippets_product_condition_refurbished .label label,
+#row_seo_snippets_rich_snippets_product_condition_damaged .label label {
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+#row_seo_snippets_name_organization_snippets .label label,
+#row_seo_snippets_country_address_organization_snippets .label label,
+#row_seo_snippets_manual_locality_address_organization_snippets .label label,
+#row_seo_snippets_manual_postal_code_organization_snippets .label label,
+#row_seo_snippets_street_address_organization_snippets .label label,
+#row_seo_snippets_telephone_organization_snippets .label label,
+#row_seo_snippets_manual_faxnumber_organization_snippets .label label,
+#row_seo_snippets_email_organization_snippets .label label {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+#row_seo_snippets_manual_name_organization_snippets .label label,
+#row_seo_snippets_manual_country_address_organization_snippets .label label,
+#row_seo_snippets_manual_street_address_organization_snippets .label label,
+#row_seo_snippets_manual_telephone_organization_snippets .label label,
+#row_seo_snippets_manual_email_organization_snippets .label label {
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+#row_seo_snippets_breadcrumbs_separator .label label {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+#row_seo_snippets_category_rich_snippets_price_text .label label,
+#row_seo_snippets_category_rich_snippets_price_text .label label,
+#row_seo_snippets_category_rich_snippets_rating_text .label label,
+#row_seo_snippets_category_rich_snippets_rewiew_count_text .label label,
+#row_seo_snippets_category_rich_snippets_rewiew_count .label label,
+#row_seo_snippets_hide_category_rich_snippets .label label {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+/*remove icon-head*/
+.seo-adminhtml-template-index .icon-head.head-adminhtml-template,
+.seo-adminhtml-template-edit .icon-head.head-adminhtml-template,
+.seo-adminhtml-template-add .icon-head.head-adminhtml-template,
+.seo-adminhtml-redirectimport-index .icon-head.head-adminhtml-redirectimport,
+.seo-adminhtml-redirect-index .icon-head.head-adminhtml-redirect,
+.seo-adminhtml-redirect-add .icon-head.head-adminhtml-redirect,
+.seo-adminhtml-redirect-edit .icon-head.head-adminhtml-redirect,
+.seo-adminhtml-rewrite-edit .icon-head.head-adminhtml-rewrite,
+.seo-adminhtml-rewrite-add .icon-head.head-adminhtml-rewrite {
+    padding-left: 0px;
+}

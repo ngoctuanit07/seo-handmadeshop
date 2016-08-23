@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<config>
+	<global>
+		<models>
+            <producttabs>
+                <class>Sns_Producttabs_Model</class>
+            </producttabs>
+        </models>
+		<blocks>
+            <producttabs>
+                <class>Sns_Producttabs_Block</class>
+            </producttabs>
+        </blocks>
+		<helpers>
+            <producttabs>
+                <class>Sns_Producttabs_Helper</class>
+            </producttabs>
+        </helpers>
+        <resources>
+        	<sns_producttabs_setup>
+        		<setup>
+        			<module>Sns_Producttabs</module>
+        		</setup>
+        	</sns_producttabs_setup>
+        </resources>
+	</global>
+	<frontend>
+        <routers>
+			<producttabs>
+                <use>standard</use>
+                <args>
+                    <module>Sns_Producttabs</module>
+                    <frontName>producttabs</frontName>
+                </args>
+            </producttabs>
+        </routers>
+		<layout>
+            <updates>
+                <producttabs module="Sns_Producttabs">
+					<file>sns/producttabs.xml</file>
+                </producttabs>
+            </updates>
+        </layout>
+        <translate>
+      		<modules>
+          		<Sns_Producttabs>
+                     <files>
+                          <default>Sns_Producttabs.csv</default>
+                     </files>
+                </Sns_Producttabs>
+            </modules>
+        </translate>
+	</frontend>
+	<adminhtml>
+        <translate>
+      		<modules>
+          		<Sns_Producttabs>
+                     <files>
+                          <default>Sns_Producttabs.csv</default>
+                     </files>
+                </Sns_Producttabs>
+            </modules>
+        </translate>
+		<menu>
+			<snstheme>
+				<title>SNS Theme</title>
+				<sort_order>87</sort_order>
+				<children>
+					<producttabs>
+						<title>Sns Product Tabs</title>
+						<sort_order>87</sort_order>
+						<action>adminhtml/system_config/edit/section/sns_producttabs_cfg/</action>
+					</producttabs>
+				</children>
+			</snstheme>
+		</menu>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<sns_producttabs_cfg translate="title" module="producttabs">
+											<title>Sns Product Tabs</title>
+										</sns_producttabs_cfg>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+	<default>
+        <sns_producttabs_cfg>
+
+<advanced>
+	<screen_lg><![CDATA[4]]></screen_lg>
+	<screen_md><![CDATA[4]]></screen_md>
+	<screen_sm><![CDATA[2]]></screen_sm>
+	<screen_xs><![CDATA[2]]></screen_xs>
+</advanced>
+<general>
+	<effects><![CDATA[zoomOut]]></effects>
+	<isenabled><![CDATA[1]]></isenabled>
+	<list_products_by><![CDATA[order]]></list_products_by>
+	<number_per_display><![CDATA[8]]></number_per_display>
+	<number_per_loadmore><![CDATA[4]]></number_per_loadmore>
+	<order_type><![CDATA[best_sales,created_at,top_rating]]></order_type>
+	<product_category><![CDATA[3,39,44,40,41,50,60,77,45,53,63,64,66,76,47,55,56,57,62,74,48,43,46,54,58,61,67,70,52,68,69,42,79,59,71,78,80,49,51,65,72,84,82,83,81]]></product_category>
+	<product_order_by><![CDATA[position]]></product_order_by>
+	<product_order_dir><![CDATA[asc]]></product_order_dir>
+	<screen_lg><![CDATA[4]]></screen_lg>
+	<screen_md><![CDATA[4]]></screen_md>
+	<screen_sm><![CDATA[3]]></screen_sm>
+	<screen_xs><![CDATA[2]]></screen_xs>
+	<show_number_loadmore><![CDATA[0]]></show_number_loadmore>
+	<title><![CDATA[Featured Products]]></title>
+</general>
+<product_selection>
+	<list_products_by><![CDATA[category]]></list_products_by>
+	<number_per_display><![CDATA[8]]></number_per_display>
+	<number_per_loadmore><![CDATA[4]]></number_per_loadmore>
+	<product_category><![CDATA[39,42,79,81]]></product_category>
+	<product_order_by><![CDATA[position]]></product_order_by>
+	<product_order_dir><![CDATA[asc]]></product_order_dir>
+</product_selection>
+
+
+</sns_producttabs_cfg>
+    </default>
+</config>

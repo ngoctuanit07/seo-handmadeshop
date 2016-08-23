@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hankeme_Pprevival>
+            <version>0.1.0</version>
+        </Hankeme_Pprevival>
+    </modules>
+    <global>
+	<blocks>
+           <hankeme_pprevival>
+                <class>Hankeme_Pprevival_Block</class>
+            </hankeme_pprevival>
+	</blocks>
+	<models>
+           <hankeme_pprevival>
+                <class>Hankeme_Pprevival_Model</class>
+            </hankeme_pprevival>
+	</models>
+	<helpers>
+            <hankeme_pprevival><class>Hankeme_Pprevival_Helper</class></hankeme_pprevival>
+        </helpers>
+    </global>
+</config> 

@@ -1,0 +1,192 @@
+
+<root>
+  <pages>
+    <cms_block>
+      <title>Kalolia - Responsive Magento Theme</title>
+      <identifier>kalolia_home_page</identifier>
+      <content><![CDATA[<div class="no-display">&nbsp;</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+      <root_template>one_column</root_template>
+      <layout_update_xml><![CDATA[
+<reference name="header">
+	<block type="slideshow/slideshow" name="sns.slideshow" as="slideshow"/>
+</reference>
+<reference name="content">
+	<block type="kalolia/usecache" name="cache.content">
+		<block type="kalolia/wrapper" name="section.no1">
+			<action method="setParams"><params>class="mrb30"</params></action>
+			<action method="setRow"><row>1</row></action>
+			<block type="kalolia/wrapper" name="section.no1.no1">
+				<action method="setParams"><params>class="col-lg-4 col-md-4 col-sm-12 col-xs-12"</params></action>
+				<block type="products/deals" name="section.no1.no1.1" />
+			</block>
+			<block type="kalolia/wrapper" name="section.no1.no2">
+				<action method="setParams"><params>class="col-lg-8 col-md-8 col-sm-12 col-xs-12"</params></action>
+				<block type="cms/block" name="kalolia_banner1">
+					<action method="setBlockId"><block_id>kalolia_banner1</block_id></action>
+				</block>
+			</block>
+		</block>   
+		<block type="producttabs/grid" name="producttabs.grid">
+			<action method="setConfig">
+				 <name>
+				<title>Feature Products</title>
+				<order_type>is_featured</order_type> 
+				</name>
+			</action>
+		</block> 
+	</block> 
+</reference>
+<reference name="after_content">
+	<block type="kalolia/usecache" name="cache.after_content">
+		<block type="kalolia/wrapper" name="section.slidercategory">
+			<action method="setId"><id>sns_category</id></action>
+			<action method="setParams"><params>class="wrap"</params></action>
+			<block type="kalolia/wrapper" name="wrap.slidercategory">
+				<block type="core/template" template="sns/blocks/category.phtml" />
+			</block>
+		</block>
+		<block type="kalolia/wrapper" name="section.bots">
+			<action method="setId"><id>sns_bots</id></action>
+			<action method="setParams"><params>class="wrap"</params></action>
+			<action method="setContainer"><container>1</container></action>
+			<block type="producttabs/slider" name="producttabs.slider">
+				<action method="setConfig">
+					<name>
+						<number_per_display>16</number_per_display>
+					</name>
+				</action>
+			</block> 
+		</block>
+		<block type="cms/block" name="kalolia_banner2">
+			<action method="setBlockId"><block_id>kalolia_banner2</block_id></action>
+		</block>
+		<block type="kalolia/wrapper" name="section.botsl2">
+			<action method="setId"><id>sns_botsl2</id></action>
+			<action method="setParams"><params>class="wrap"</params></action>
+			<action method="setContainer"><container>1</container></action>
+			<block type="kalolia/wrapper" name="section.botsl2.no1">
+				<action method="setParams"><params>class="col-lg-6 col-md-6 col-sm-6 col-xs-12"</params></action>
+				<block type="blog/blog" template="aw_blog/custom-bloglatest.phtml" />
+			</block>
+			<block type="kalolia/wrapper" name="section.botsl2.no2">
+				<action method="setParams"><params>class="col-lg-6 col-md-6 col-sm-6 col-xs-12"</params></action>
+				<block type="core/template" template="sns/blocks/partners.phtml" />
+			</block>
+		</block> 
+				
+	</block>
+</reference>
+		]]></layout_update_xml>
+    </cms_block>
+    <cms_block>
+      <title>Kalolia About Us</title>
+      <identifier>kalolia_about_us</identifier>
+      <content><![CDATA[<div class="jumbotron">
+	<h1>Welcome to Kalolia</h1>
+	<p>Cras sit amet nibh libero, in gravida nulla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Donec lacinia congue felis in faucibus.</p>
+</div>
+<div class="outteam">
+	<h2 class="page-header">Our team</h2>
+	<div class="row">
+		<div class="col-sm-3">
+			<h4>Vincent Vanilla</h4>
+			<p><img class="" alt="" src="http://placehold.it/300x150"></p>
+			<p><small>by Daryl Toh Liem Zhan</small></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		</div>
+		<div class="col-sm-3">
+			<h4>Vincent Vanilla</h4>
+			<p><img class="" alt="" src="http://placehold.it/300x150"></p>
+			<p><small>by Daryl Toh Liem Zhan</small></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		</div>
+		<div class="col-sm-3">
+			<h4>Vincent Vanilla</h4>
+			<p><img class="" alt="" src="http://placehold.it/300x150"></p>
+			<p><small>by Daryl Toh Liem Zhan</small></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		</div>
+		<div class="col-sm-3">
+			<h4>Vincent Vanilla</h4>
+			<p><img class="" alt="" src="http://placehold.it/300x150"></p>
+			<p><small>by Daryl Toh Liem Zhan</small></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		</div>
+	</div>
+</div>
+<div class="service">
+	<h2 class="page-header">Services and Custome</h2>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="media">
+				<i class="fa fa-database fa-5x pull-left fa-border"></i>
+				<div class="media-body">
+					<h4 class="media-heading">Concept and Ideas</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="media">
+				<i class="fa fa-wrench fa-5x pull-left fa-border"></i>
+				<div class="media-body">
+					<h4 class="media-heading">Concept and Ideas</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="media">
+				<i class="fa fa-file-text fa-5x pull-left fa-border"></i>
+				<div class="media-body">
+					<h4 class="media-heading">Concept and Ideas</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br /><br />
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="media">
+				<i class="fa fa-recycle fa-5x pull-left fa-border"></i>
+				<div class="media-body">
+					<h4 class="media-heading">Concept and Ideas</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="media">
+				<i class="fa fa-rocket fa-5x pull-left fa-border"></i>
+				<div class="media-body">
+					<h4 class="media-heading">Concept and Ideas</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="media">
+				<i class="fa fa-cog fa-5x pull-left fa-border"></i>
+				<div class="media-body">
+					<h4 class="media-heading">Concept and Ideas</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br /><br /><br /><br /><br /><br />]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+      <root_template>one_column</root_template>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+    </cms_block>
+  </pages>
+</root>

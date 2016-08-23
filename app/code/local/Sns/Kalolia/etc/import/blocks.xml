@@ -1,0 +1,321 @@
+
+<root>
+  <blocks>
+    <cms_block>
+      <title>Connect us and Payment methods</title>
+      <identifier>kalolia_payment</identifier>
+      <content><![CDATA[<ul class="payment">
+<li><a title="Paypal" href="#" data-original-title="Paypal" data-toggle="tooltip"><img src="{{media url="wysiwyg/kalolia/icon/pay.jpg"}}" alt="" /></a></li>
+<li><a title="Discover" href="#" data-original-title="Discover" data-toggle="tooltip"><img src="{{media url="wysiwyg/kalolia/icon/dis.jpg"}}" alt="" /></a></li>
+<li><a title="Mastercard" href="#" data-original-title="Mastercard" data-toggle="tooltip"><img src="{{media url="wysiwyg/kalolia/icon/cr.jpg"}}" alt="" /></a></li>
+<li><a title="Visa" href="#" data-original-title="Visa" data-toggle="tooltip"><img src="{{media url="wysiwyg/kalolia/icon/visa.jpg"}}" alt="" /></a></li>
+</ul>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Banner category</title>
+      <identifier>kalolia_banner_cat</identifier>
+      <content><![CDATA[<div class="block"><a class="banner4" href="#"><img alt="" src="{{media url="wysiwyg/kalolia/banner_right.jpg"}}" /></a></div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html1_1</title>
+      <identifier>kalolia_slide_html1_1</identifier>
+      <content><![CDATA[<div>
+<div data-u=caption data-t="DDGDANCE|RB" data-t2="RTT|10" data-d=-100 data-du=3800 style="position:absolute;left:240px;  width:620px;top:-10px;height:460px;text-align:center; "><img data-u="image" alt="" src="{{media url="wysiwyg/kalolia/slideshow/img1.png"}}" /></div>
+<div data-u="caption" data-t="MCLIP|R" data-d=-300 class="fs18 gray fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top: 120px;height:30px;text-align:center; ">Specail for this season</div>
+<div data-u="caption" data-t="MCLIP|R" data-d=-300 class="fs30 black fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top:150px;height:40px;text-align:center;">New product from paris</div>
+<div data-u="caption" data-t="MCLIP|R" data-d=-300 class="fs16 gray"  style="position:absolute;right:420px;  width:700px;top:190px;height:80px;line-height:20px;text-align:center;">Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet.</div>
+<div data-u=caption data-t="ATTACK|BR"   style="position:absolute;right:420px;  width:700px;top:280px;height:40px; text-align:center;"><a  data-d=-500 class="fs16 bg  gray button"  href="#">view detail</a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html2_1</title>
+      <identifier>kalolia_slide_html2_1</identifier>
+      <content><![CDATA[<div>
+<div  data-u=caption data-t="T|IB" data-d=-100  style="position:absolute;left:320px; width:500px;top:0px;height:415px;text-align:center; "><img data-u="image" alt="" src="{{media url="wysiwyg/kalolia/slideshow/img2.png"}}" /></div>
+<div data-u=caption data-t="T|IB" data-t2=L  d=-300 class="fs18 gray fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top: 120px;height:30px;text-align:center; ">Specail for this season</div>
+<div data-u=caption data-t="T|IB" data-t2=L  d=-300 class="fs30 black fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top:150px;height:40px;text-align:center;">New product from paris</div>
+<div data-u=caption data-t="T|IB" data-t2=L  d=-300 class="fs16 gray"  style="position:absolute;right:420px;  width:700px;top:190px;height:80px;line-height:20px;text-align:center;">Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet.</div>
+<div data-u=caption data-t="RTT|10"    style="position:absolute;right:420px;  width:700px;top:280px;height:40px; text-align:center;"><a  data-d=-500 class="fs16 bg  gray button"  href="#">view detail</a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html3_1</title>
+      <identifier>kalolia_slide_html3_1</identifier>
+      <content><![CDATA[<div>
+<div data-u=caption data-t="T|IE*IE" data-d=-200 data-du=3800 style="position:absolute;left:240px;  width:620px;top:-10px;height:460px;text-align:center; "><img data-u="image" alt="" src="{{media url="wysiwyg/kalolia/slideshow/img1.png"}}" /></div>
+<div data-u=caption data-t="T|IE*IE"  data-d=-300  class="fs18 gray fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top: 120px;height:30px;text-align:center; ">Specail for this season</div>
+<div data-u=caption data-t="T|IE*IE" data-d=-300 class="fs30 black fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top:150px;height:40px;text-align:center;">New product from paris</div>
+<div data-u=caption data-t="T|IE*IE" data-t2=L  class="fs16 gray"  style="position:absolute;right:420px;  width:700px;top:190px;height:80px;line-height:20px;text-align:center;">Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet.</div>
+<div data-u=caption data-t="ATTACK|BR"   style="position:absolute;right:420px;  width:700px;top:280px;height:40px; text-align:center;"><a  data-d=-500 class="fs16 bg  gray button"  href="#">view detail</a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>About Us</title>
+      <identifier>kalolia_footer_3</identifier>
+      <content><![CDATA[<h6>kalolia</h6>
+<p>Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet. Donec at mattis purus, ut</p>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Custom Block</title>
+      <identifier>kalolia_custom_block</identifier>
+      <content><![CDATA[<p class="text-center"><img src="{{media url="wysiwyg/kalolia/logo.png"}}" alt="" /></p>
+<p style="padding: 0px 7%;"><em>“ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type. ”</em></p>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Sticky Custom</title>
+      <identifier>kalolia_sticky_custom</identifier>
+      <content><![CDATA[<p><img style="margin-top: 5px;" src="http://placehold.it/240x180" alt="" /></p>
+<p>Retra faucibus eu laoreet nunc. Tincidunt nulla a Nulla eu convallis scelerisque sociis nulla interdum et. Cursus senectus aliquet pretium at tristique hac ullamcorper adipiscing et Donec. Enim montes parturient.</p>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Sticky Facebook Like Box</title>
+      <identifier>kalolia_fb_likebox</identifier>
+      <content><![CDATA[<div>{{block type="facebook/list" name="fb.likebox"}}</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Banner detail</title>
+      <identifier>kalolia_banner_detail</identifier>
+      <content><![CDATA[<div class="banner4"><img alt="" src="{{media url="wysiwyg/kalolia/banner-detail.jpg"}}" /></div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Custom block in sidebar</title>
+      <identifier>kalolia_custom_block_sidebar</identifier>
+      <content><![CDATA[<div class="block">
+<div class="block-title"><span>Custom Block</span></div>
+<div class="block-content">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Custom block in header</title>
+      <identifier>kalolia_custom_block_header</identifier>
+      <content><![CDATA[<div class="row head-policy" style="padding-top: 35px;">
+<div class="col-xs-4"><em class="fa fa-truck pull-left" style="font-size: 30px;"></em> <strong>Free shipping</strong><br /> Order over $100</div>
+<div class="col-xs-4"><em class="fa fa-gift pull-left" style="font-size: 30px;"></em> <strong>Special weekly</strong><br /> Offer</div>
+<div class="col-xs-4"><em class="fa fa-money pull-left" style="font-size: 30px;"></em> <strong>Money back</strong><br /> 30 Days</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html1_2</title>
+      <identifier>kalolia_slide_html1_2</identifier>
+      <content><![CDATA[<div><a href="#"><img alt="" src="{{media url="wysiwyg/kalolia/slideshow/bg4.jpg"}}" /></a>
+<div data-u="caption" data-t="MCLIP|R" class="fs18 font cwhite  fwbold tuppercase" style="position: absolute; left: 420px; width: 700px; top: 120px; height: 30px; text-align: center;">Specail for this season</div>
+<div data-u="caption" data-t="MCLIP|R" class="fs30 font cwhite  fwbold tuppercase" style="position: absolute; left: 420px; width: 700px; top: 150px; height: 30px; padding-top: 5px; text-align: center;">New product from paris</div>
+<div data-u="caption" data-t="MCLIP|R" class="fs16 cwhite " style="position: absolute; left: 420px; width: 700px; top: 200px; height: 80px; line-height: 20px; text-align: center;">Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet.</div>
+<div data-u=caption data-t="ATTACK|BR"  style="position: absolute; left: 420px; width: 700px; top: 290px; height: 40px; text-align: center;"><a class="fs16 cwhite button" href="#">view detail</a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html2_2</title>
+      <identifier>kalolia_slide_html2_2</identifier>
+      <content><![CDATA[<div><a href="#"><img u="image" alt="" src="{{media url="wysiwyg/kalolia/slideshow/bg5.jpg"}}" /></a>
+<div u=caption t="T|IE*IE"  d=-300  class="fs30 font cwhite fwbold tuppercase" style="position:absolute;right:530px;  width:940px;top:180px;height:30px;text-align:center; ">Specail for this season</div>
+<div u=caption t="T|IE*IE" d=-300 class="fs60 font cwhite fwbold tuppercase" style="position:absolute;right:530px;  width:940px;top:240px;height:80px;text-align:center;">New product from paris</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html3_2</title>
+      <identifier>kalolia_slide_html3_2</identifier>
+      <content><![CDATA[<div><a href="#"><img alt="" src="{{media url="wysiwyg/kalolia/slideshow/bg6.jpg"}}" /></a>
+<div data-u=caption data-t="T|IB" data-t2=L  data-d=-300  class="fs18 font cwhite  fwbold tuppercase" style="position: absolute; left: 420px; width: 700px; top: 120px; height: 30px; text-align: center;">Specail for this season</div>
+<div data-u=caption data-t="T|IB" data-t2=L  data-d=-300  class="fs30 font cwhite  fwbold tuppercase" style="position: absolute; left: 420px; width: 700px; top: 150px; height: 30px; padding-top: 5px; text-align: center;">New product from paris</div>
+<div data-u=caption data-t="T|IB" data-t2=L  data-d=-300  class="fs16 cwhite " style="position: absolute; left: 420px; width: 700px; top: 200px; height: 80px; line-height: 20px; text-align: center;">Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet.</div>
+<div data-u=caption data-t="RTT|10"   style="position: absolute; left: 420px; width: 700px; top: 290px; height: 40px; text-align: center;"><a class="fs16 cwhite button" href="#">view detail</a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html1</title>
+      <identifier>kalolia_slide_html1</identifier>
+      <content><![CDATA[<div><a href="#"><img data-u="image" alt="" src="{{media url="wysiwyg/kalolia/slideshow/bg1.jpg"}}" /></a>
+<div data-u="caption" data-t="MCLIP|R" data-d=-300 class="fs18 color-text fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top: 120px;height:30px;text-align:center; ">Specail for this season</div>
+<div data-u="caption" data-t="MCLIP|R" data-d=-300 class="fs30 black fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top:150px;height:40px;text-align:center;">New product from paris</div>
+<div data-u="caption" data-t="MCLIP|R" data-d=-300 class="fs16 gray"  style="position:absolute;right:420px;  width:700px;top:190px;height:80px;line-height:20px;text-align:center;">Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet.</div>
+<div data-u=caption data-t="ATTACK|BR"   style="position:absolute;right:420px;  width:700px;top:280px;height:40px; text-align:center;"><a  d=-500 class="fs16 bg  gray button"  href="#">view detail</a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Kalolia policy shop</title>
+      <identifier>kalolia_policy_shop</identifier>
+      <content><![CDATA[<div class="policy_shop">
+<div class="container">
+<div class="row">
+<div class="col-md-4 col-sm-4  col-xs-4 col-phone-12 policy">
+<i class="fa fa-truck"></i>
+<div class="ca-content">
+<h2 class="ca-main">Free shipping</h2>
+<span>Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit.</span></div>
+</div>
+<div class="col-md-4 col-sm-4  col-xs-4 col-phone-12  policy">
+<i class="fa fa-mail-reply"></i>
+<div class="ca-content">
+<h2 class="ca-main">100% money back</h2>
+<span>Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit.</span></div>
+</div>
+<div class="col-md-4 col-sm-4  col-xs-4 col-phone-12 policy">
+<i class="fa fa-comments"></i>
+<div class="ca-content">
+<h2 class="ca-main">online support 24/7</h2>
+<span>Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit.</span></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Banner 2</title>
+      <identifier>kalolia_banner2</identifier>
+      <content><![CDATA[<div class="banner2-bottom">
+<div class="container">
+<div class="col-xs-6 banner-left"><img src="{{media url="wysiwyg/kalolia/banner2.png"}}" alt="" /></div>
+<div class="col-xs-6 banner-right">
+<h2>new bags fashion</h2>
+<span>SPRING COLLECTION</span> <a href="shop now">shop now</a></div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html2</title>
+      <identifier>kalolia_slide_html2</identifier>
+      <content><![CDATA[<div><a href="#"><img data-u="image" alt="" src="{{media url="wysiwyg/kalolia/slideshow/bg2.jpg"}}" /></a>
+<div data-u=caption data-t="T|IB" data-t2=L  data-d=-300 class="fs18 color-text fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top: 120px;height:30px;text-align:center; ">Specail for this season</div>
+<div data-u=caption data-t="T|IB" data-t2=L  data-d=-300 class="fs30 black fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top:150px;height:40px;text-align:center;">New product from paris</div>
+<div data-u=caption data-t="T|IB" data-t2=L  data-d=-300 class="fs16 gray"  style="position:absolute;right:420px;  width:700px;top:190px;height:80px;line-height:20px;text-align:center;">Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet.</div>
+<div data-u=caption data-t="RTT|10"    style="position:absolute;right:420px;  width:700px;top:280px;height:40px; text-align:center;"><a  data-d=-500 class="fs16 bg  gray button"  href="#">view detail</a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>kalolia_slide_html3</title>
+      <identifier>kalolia_slide_html3</identifier>
+      <content><![CDATA[<div><a href="#"><img data-u="image" alt="" src="{{media url="wysiwyg/kalolia/slideshow/bg3.jpg"}}" /></a>
+<div data-u=caption data-t="T|IE*IE"  data-d=-300  class="fs18 color-text fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top: 120px;height:30px;text-align:center; ">Specail for this season</div>
+<div data-u=caption data-t="T|IE*IE" data-d=-300 class="fs30 black fwbold tuppercase" style="position:absolute;right:420px;  width:700px;top:150px;height:40px;text-align:center;">New product from paris</div>
+<div data-u=caption data-t="T|IE*IE" data-t2=L  class="fs16 gray"  style="position:absolute;right:420px;  width:700px;top:190px;height:80px;line-height:20px;text-align:center;">Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet.</div>
+<div data-u=caption data-t="ATTACK|BR"   style="position:absolute;right:420px;  width:700px;top:280px;height:40px; text-align:center;"><a  data-d=-500 class="fs16 bg  gray button"  href="#">view detail</a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Shipping Info </title>
+      <identifier>kalolia_footer_2</identifier>
+      <content><![CDATA[<div class="pull-left"><h6>Shipping Info</h6>
+<ul>
+<li><a href="#">New collection</a></li>
+<li><a href="#">Best sellers</a></li>
+<li><a href="#">Manufactirers</a></li>
+<li><a href="#">Suppliers</a></li>
+<li><a href="#">Specials</a></li>
+<li><a href="#">Delivery &amp; returns</a></li>
+</ul>
+</div>
+<div class="pull-right">
+<h6>Information</h6>
+<ul>
+<li><a href="#">Recalls</a></li>
+<li><a href="{{store direct_url="customer/account"}}">My Account</a></li>
+<li><a href="{{store direct_url="sales/guest/form"}}">Orders and Returns</a></li>
+<li><a href="{{store direct_url="catalog/seo_sitemap/category"}}">Site Map</a></li>
+<li><a href="{{store direct_url="catalogsearch/term/popular"}}">Search Terms</a></li>
+<li><a href="{{store direct_url="catalogsearch/advanced"}}">Advanced Search</a></li>
+</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+    <cms_block>
+      <title>Banner 1</title>
+      <identifier>kalolia_banner1</identifier>
+      <content><![CDATA[<div class="row banner-top">
+<div class="col-xs-12 col-phone-12 "><a class="banner2" href="#"><img alt="" src="{{media url="wysiwyg/kalolia/banner1.jpg"}}" /></a></div>
+<div class="col-xs-6 col-phone-12"><a class="banner2" href="#"><img alt="" src="{{media url="wysiwyg/kalolia/banner2.jpg"}}" /></a></div>
+<div class="col-xs-6 col-phone-12"><a class="banner2" href="#"><img alt="" src="{{media url="wysiwyg/kalolia/banner3.jpg"}}" /></a></div>
+<div class="col-xs-6 col-phone-12"><a class="banner2" href="#"><img alt="" src="{{media url="wysiwyg/kalolia/banner4.jpg"}}" /></a></div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>
+        <item>0</item>
+      </stores>
+    </cms_block>
+  </blocks>
+</root>

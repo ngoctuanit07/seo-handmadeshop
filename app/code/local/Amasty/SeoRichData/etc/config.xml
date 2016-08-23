@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Amasty_SeoRichData>
+            <version>1.1.1</version>
+        </Amasty_SeoRichData>
+    </modules>
+
+    <global>
+        <blocks>
+            <amseorichdata>
+                <class>Amasty_SeoRichData_Block</class>
+            </amseorichdata>
+        </blocks>
+
+        <helpers>
+            <amseorichdata>
+                <class>Amasty_SeoRichData_Helper</class>
+            </amseorichdata>
+        </helpers>
+
+        <models>
+            <amseorichdata>
+                <class>Amasty_SeoRichData_Model</class>
+            </amseorichdata>
+        </models>
+    </global>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <Amasty_SeoRichData>
+                    <files>
+                        <default>Amasty_SeoRichData.csv</default>
+                    </files>
+                </Amasty_SeoRichData>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <events>
+            <controller_front_send_response_before>
+                <observers>
+                    <amseorichdata>
+                        <type>singleton</type>
+                        <class>amseorichdata/observer</class>
+                        <method>sendResponseBefore</method>
+                    </amseorichdata>
+                </observers>
+            </controller_front_send_response_before>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <amseorichdata>
+                        <type>singleton</type>
+                        <class>amseorichdata/observer</class>
+                        <method>handleBlockOutput</method>
+                    </amseorichdata>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+
+        <layout>
+            <updates>
+                <amseorichdata>
+                    <file>amasty/amseorichdata/amseorichdata.xml</file>
+                </amseorichdata>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <amseorichdata>
+            <product>
+                <container_selector>.product-view</container_selector>
+                <name_selector>.product-view .product-name</name_selector>
+                <description_selector>.short-description .std</description_selector>
+                <container_price_selector>.price-box</container_price_selector>
+            </product>
+            <organization>
+                <container_selector>.header-container</container_selector>
+                <name_selector>.header-container .logo strong</name_selector>
+                <logo_selector>.header-container .logo img</logo_selector>
+                <url_selector>.header-container .logo</url_selector>
+            </organization>
+            <rating>
+                <totals>3</totals>
+            </rating>
+            <breadcrumbs>
+                <item_selector>li</item_selector>
+                <url_selector>li a</url_selector>
+                <title_selector>li a, li strong</title_selector>
+            </breadcrumbs>
+        </amseorichdata>
+    </default>
+
+</config>

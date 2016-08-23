@@ -1,0 +1,3 @@
+<?php /* added automatically by conflict fixing tool */ if (Mage::getConfig()->getNode('modules/Amasty_Shopby/active')) {
+                class Mirasvit_Seo_Block_Catalog_Product_List_Toolbar_Adapter_Amasty_Pure extends Amasty_Shopby_Block_Catalog_Product_List_Toolbar {}
+            } else { class Mirasvit_Seo_Block_Catalog_Product_List_Toolbar_Adapter_Amasty_Pure extends Mirasvit_SeoFilter_Block_Catalog_Product_List_Toolbar {} } ?>

@@ -1,0 +1,273 @@
+<?xml version="1.0" ?><config>
+	<modules>
+		<Sns_Kalolia>
+			<version>1.0.2</version>
+			<title>Sns Kalolia</title>
+		</Sns_Kalolia>
+	</modules>
+	<frontend>
+		<routers>
+			<kalolia>
+				<use>standard</use>
+				<args>
+					<module>Sns_Kalolia</module>
+					<frontName>kalolia</frontName>
+				</args>
+			</kalolia>
+		</routers>
+		<layout>
+			<updates>
+				<kalolia>
+					<file>sns/kalolia.xml</file>
+				</kalolia>
+			</updates>
+		</layout>
+		 <events>
+			<controller_action_layout_render_before>
+				 <observers>
+                    <settings>
+                        <type>singleton</type>
+                        <class>kalolia/observer</class>
+                        <method>less_compile</method>
+                    </settings>
+                </observers>
+			</controller_action_layout_render_before>
+		</events>
+	</frontend>
+	<global>
+		<helpers>
+			<kalolia>
+				<class>Sns_Kalolia_Helper</class>
+			</kalolia>
+			<cms>
+				<rewrite>
+					<wysiwyg_images>Sns_Kalolia_Helper_Cms_Wysiwyg_Images</wysiwyg_images>
+				</rewrite>
+			</cms>
+		</helpers>
+		<models>
+			<kalolia>
+				<class>Sns_Kalolia_Model</class>
+			</kalolia>
+		</models>
+		<blocks>
+			<kalolia>
+				<class>Sns_Kalolia_Block</class>
+			</kalolia>
+			<adminhtml>
+				<rewrite>
+					<cms_wysiwyg_images_content>Sns_Kalolia_Block_Adminhtml_Cms_Wysiwyg_Images_Content</cms_wysiwyg_images_content>
+				</rewrite>
+			</adminhtml>
+		</blocks>
+		<resources>
+			<sns_kalolia_setup>
+				<setup>
+					<module>Sns_Kalolia</module>
+					<class>Sns_Kalolia_Model_Resource_Eav_Mysql4_Setup</class>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</sns_kalolia_setup>
+			<kalolia_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</kalolia_write>
+			<kalolia_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</kalolia_read>
+		</resources>
+	</global>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Sns_Kalolia before="Mage_Adminhtml">Sns_Kalolia_Adminhtml</Sns_Kalolia>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<adminhtml>
+		<menu>
+			<snstheme>
+				<title>SNS Theme</title>
+				<sort_order>87</sort_order>
+				<children>
+					<kalolia>
+						<title>SNS Kalolia</title>
+						<action>adminhtml/system_config/edit/section/sns_kalolia_cfg/</action>
+					</kalolia>
+					<kalolia_sticky>
+						<title>SNS Kalolia Sticky</title>
+						<action>adminhtml/system_config/edit/section/sns_kalolia_sticky/</action>
+					</kalolia_sticky>
+				</children>
+			</snstheme>
+		</menu>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<sns_kalolia_cfg translate="title" module="kalolia">
+											<title>SNS Kalolia Section</title>
+										</sns_kalolia_cfg>
+										<sns_kalolia_sticky translate="title" module="kalolia">
+											<title>SNS Kalolia Sticky Section</title>
+										</sns_kalolia_sticky>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<kalolia>
+					<file>sns/kalolia.xml</file>
+				</kalolia>
+			</updates>
+		</layout>
+		<translate>
+			<modules>
+				<Sns_Kalolia>
+					<files>
+						<default>Sns_Kalolia.csv</default>
+					</files>
+				</Sns_Kalolia>
+			</modules>
+		</translate>
+	</adminhtml>
+	<default>
+		<sns_kalolia_sticky>
+			<sticky>
+			     <listStickyLeft><![CDATA[a:2:{s:18:"_1407742133129_129";a:6:{s:4:"icon";s:30:"<i class="fa fa-facebook"></i>";s:5:"class";s:0:"";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"style";s:1:"2";s:7:"content";s:8:"Facebook";}s:18:"_1407742138445_445";a:6:{s:4:"icon";s:30:"<i class="fa fa-facebook"></i>";s:5:"class";s:0:"";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"style";s:1:"2";s:7:"content";s:8:"Facebook";}}]]></listStickyLeft>
+			     <listStickyRight><![CDATA[a:2:{s:18:"_1407742130470_470";a:6:{s:4:"icon";s:30:"<i class="fa fa-facebook"></i>";s:5:"class";s:0:"";s:4:"link";s:1:"#";s:6:"target";s:5:"_self";s:5:"style";s:1:"1";s:7:"content";s:16:"kalolia_fb_likebox";}s:18:"_1407742137564_564";a:6:{s:4:"icon";s:28:"<i class="fa fa-coffee"></i>";s:5:"class";s:0:"";s:4:"link";s:1:"#";s:6:"target";s:5:"_self";s:5:"style";s:1:"1";s:7:"content";s:19:"kalolia_sticky_custom";}}]]></listStickyRight>
+			     <useStickyLeft><![CDATA[0]]></useStickyLeft>
+			     <useStickyRight><![CDATA[0]]></useStickyRight>
+			</sticky>
+		</sns_kalolia_sticky>
+		<sns_kalolia_cfg>
+
+<advance>
+	<customcss><![CDATA[]]></customcss>
+	<lessCompress><![CDATA[1]]></lessCompress>
+	<lessEnabled><![CDATA[1]]></lessEnabled>
+	<scrollAnimate><![CDATA[0]]></scrollAnimate>
+	<scrollToTop><![CDATA[1]]></scrollToTop>
+	<showCpanel><![CDATA[1]]></showCpanel>
+	<showTooltip><![CDATA[1]]></showTooltip>
+	<themeColor><![CDATA[#b49400]]></themeColor>
+	<themeColor2><![CDATA[#f1b500]]></themeColor2>
+</advance>
+<beforefooter>
+	<staticblock><![CDATA[kalolia_policy_shop]]></staticblock>
+	<staticblockStatus><![CDATA[1]]></staticblockStatus>
+</beforefooter>
+<footer>
+	<staticblock_col1><![CDATA[kalolia_footer_1]]></staticblock_col1>
+	<staticblock_col2><![CDATA[kalolia_footer_2]]></staticblock_col2>
+	<staticblock_col3><![CDATA[kalolia_footer_3]]></staticblock_col3>
+	<staticblock_col4><![CDATA[0]]></staticblock_col4>
+	<staticblock_col5><![CDATA[0]]></staticblock_col5>
+	<staticblock_col6><![CDATA[0]]></staticblock_col6>
+</footer>
+<general>
+	<bodyBgAttachment><![CDATA[fixed]]></bodyBgAttachment>
+	<bodyBgColor><![CDATA[#ffffff]]></bodyBgColor>
+	<bodyBgImage><![CDATA[pattern_13]]></bodyBgImage>
+	<bodyBgImage2><![CDATA[]]></bodyBgImage2>
+	<bodyBgPosition><![CDATA[center top]]></bodyBgPosition>
+	<bodyBgRepeat><![CDATA[repeat]]></bodyBgRepeat>
+	<dealsCountdown><![CDATA[1]]></dealsCountdown>
+	<effectImageHover><![CDATA[transform-origin]]></effectImageHover>
+	<fontFamily><![CDATA[arial]]></fontFamily>
+	<fontSize><![CDATA[13px]]></fontSize>
+	<galleryImg><![CDATA[1]]></galleryImg>
+	<googleFont><![CDATA[PT+Sans:400,700]]></googleFont>
+	<googleFontTargets><![CDATA[body#bd]]></googleFontTargets>
+	<headerBgColor><![CDATA[#574747]]></headerBgColor>
+	<layoutType><![CDATA[1]]></layoutType>
+	<styleHeader><![CDATA[solid]]></styleHeader>
+	<styleStore><![CDATA[style1]]></styleStore>
+	<useImageHover><![CDATA[0]]></useImageHover>
+	<usePosition><![CDATA[1]]></usePosition>
+	<useStore><![CDATA[light]]></useStore>
+	<useTagNew><![CDATA[1]]></useTagNew>
+	<useTagSale><![CDATA[1]]></useTagSale>
+</general>
+<header>
+	<bg_color><![CDATA[#36c2b9]]></bg_color>
+	<bg_img><![CDATA[]]></bg_img>
+</header>
+<install>
+	<overwrite_blocks><![CDATA[0]]></overwrite_blocks>
+	<overwrite_pages><![CDATA[0]]></overwrite_pages>
+</install>
+<listingpage>
+	<displayAddtocart><![CDATA[1]]></displayAddtocart>
+	<displayCompare><![CDATA[1]]></displayCompare>
+	<displayWishlist><![CDATA[1]]></displayWishlist>
+</listingpage>
+<menu>
+	<customItems><![CDATA[a:3:{s:18:"_1417597106404_404";a:6:{s:5:"title";s:4:"Home";s:4:"link";s:16:"{{store url=""}}";s:6:"target";s:5:"_self";s:8:"position";s:5:"first";s:8:"block_id";s:1:"0";s:6:"status";s:1:"0";}s:18:"_1417597120884_884";a:6:{s:5:"title";s:5:"Blogs";s:4:"link";s:20:"{{store url="blog"}}";s:6:"target";s:5:"_self";s:8:"position";s:4:"last";s:8:"block_id";s:1:"0";s:6:"status";s:1:"0";}s:18:"_1418004786159_159";a:6:{s:5:"title";s:8:"Contacts";s:4:"link";s:24:"{{store url="contacts"}}";s:6:"target";s:5:"_self";s:8:"position";s:4:"last";s:8:"block_id";s:1:"0";s:6:"status";s:1:"0";}}]]></customItems>
+	<keepMenu><![CDATA[0]]></keepMenu>
+	<resMenu><![CDATA[sidebar]]></resMenu>
+</menu>
+<ourpartners>
+	<bg_color><![CDATA[#944d4d]]></bg_color>
+	<bg_img><![CDATA[wysiwyg/kalolia/bg_partners.jpg]]></bg_img>
+	<enabled><![CDATA[1]]></enabled>
+	<partners><![CDATA[a:12:{s:17:"_1417077999078_78";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/1.png";}s:18:"_1417078000218_218";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/2.png";}s:18:"_1417078000702_702";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/3.png";}s:18:"_1417078001174_174";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/4.png";}s:18:"_1417078001702_702";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/5.png";}s:18:"_1417078023997_997";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/6.png";}s:18:"_1417078655810_810";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/7.png";}s:16:"_1417078657002_2";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/8.png";}s:18:"_1417078657514_514";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:28:"wysiwyg/kalolia/brands/9.png";}s:17:"_1417078658066_66";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:29:"wysiwyg/kalolia/brands/10.png";}s:18:"_1417078658594_594";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:29:"wysiwyg/kalolia/brands/11.png";}s:17:"_1417078659090_90";a:4:{s:5:"title";s:9:"SNS Group";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:29:"wysiwyg/kalolia/brands/12.png";}}]]></partners>
+	<title><![CDATA[Our Banrd]]></title>
+</ourpartners>
+<productpage>
+	<customtabStaticblock><![CDATA[kalolia_sticky_custom]]></customtabStaticblock>
+	<customtabStatus><![CDATA[1]]></customtabStatus>
+	<customtabTitle><![CDATA[Custom tab]]></customtabTitle>
+	<innerStaticblock><![CDATA[kalolia_banner_detail]]></innerStaticblock>
+	<innerStatus><![CDATA[1]]></innerStatus>
+	<useAddThis><![CDATA[1]]></useAddThis>
+</productpage>
+<slidercategory>
+	<bg_color><![CDATA[]]></bg_color>
+	<bg_img><![CDATA[wysiwyg/kalolia/img-cateogy/bg-category.png]]></bg_img>
+	<category><![CDATA[a:8:{s:18:"_1417408417362_362";a:4:{s:5:"title";s:5:"Women";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:41:"wysiwyg/kalolia/img-cateogy/category1.jpg";}s:18:"_1417408934810_810";a:4:{s:5:"title";s:3:"Men";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:41:"wysiwyg/kalolia/img-cateogy/category2.jpg";}s:18:"_1417408956767_767";a:4:{s:5:"title";s:6:"Sports";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:41:"wysiwyg/kalolia/img-cateogy/category3.jpg";}s:18:"_1417408989670_670";a:4:{s:5:"title";s:4:"Bags";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:41:"wysiwyg/kalolia/img-cateogy/category4.jpg";}s:18:"_1417409002574_574";a:4:{s:5:"title";s:5:"Women";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:41:"wysiwyg/kalolia/img-cateogy/category1.jpg";}s:18:"_1417409003102_102";a:4:{s:5:"title";s:3:"Men";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:41:"wysiwyg/kalolia/img-cateogy/category2.jpg";}s:18:"_1417409003606_606";a:4:{s:5:"title";s:6:"Sports";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:41:"wysiwyg/kalolia/img-cateogy/category3.jpg";}s:18:"_1417409004161_161";a:4:{s:5:"title";s:4:"Bags";s:4:"link";s:1:"#";s:6:"target";s:6:"_blank";s:5:"image";s:41:"wysiwyg/kalolia/img-cateogy/category4.jpg";}}]]></category>
+	<enabled><![CDATA[1]]></enabled>
+	<title><![CDATA[Product Categories]]></title>
+</slidercategory>
+<social>
+	<items><![CDATA[a:5:{s:18:"_1404877041312_312";a:4:{s:5:"title";s:9:"SNS Theme";s:4:"link";s:1:"#";s:4:"icon";s:11:"fa-facebook";s:6:"target";s:5:"_self";}s:18:"_1404877043240_240";a:4:{s:5:"title";s:9:"SNS Theme";s:4:"link";s:1:"#";s:4:"icon";s:9:"fa-tumblr";s:6:"target";s:5:"_self";}s:18:"_1404890310671_671";a:4:{s:5:"title";s:9:"SNS Theme";s:4:"link";s:1:"#";s:4:"icon";s:11:"fa-linkedin";s:6:"target";s:5:"_self";}s:18:"_1404890311224_224";a:4:{s:5:"title";s:9:"SNS Theme";s:4:"link";s:1:"#";s:4:"icon";s:6:"fa-rss";s:6:"target";s:5:"_self";}s:18:"_1409806909803_803";a:4:{s:5:"title";s:9:"SNS Theme";s:4:"link";s:1:"#";s:4:"icon";s:8:"fa-weibo";s:6:"target";s:5:"_self";}}]]></items>
+	<status><![CDATA[1]]></status>
+</social>
+<storelocation>
+	<map_zoom><![CDATA[14]]></map_zoom>
+	<status><![CDATA[1]]></status>
+	<statusfooter><![CDATA[1]]></statusfooter>
+	<store_address><![CDATA[5 Avenue Anatole France 75007]]></store_address>
+	<store_email><![CDATA[contact@kalolia.com]]></store_email>
+	<store_info><![CDATA[Lorem ipsum dolor sit amet, news consectetur fashion adipiscing elit. Donec at mattis purus, ut accumsan nisl]]></store_info>
+	<store_name><![CDATA[Kalolia]]></store_name>
+	<store_phone><![CDATA[00-123-456-789]]></store_phone>
+</storelocation>
+<testimonial>
+	<items><![CDATA[a:3:{s:18:&quot;_1409740912592_592&quot;;a:2:{s:11:&quot;description&quot;;s:192:&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type.&quot;;s:4:&quot;name&quot;;s:18:&quot;- Nicola Mustone -&quot;;}s:18:&quot;_1409741036706_706&quot;;a:2:{s:11:&quot;description&quot;;s:192:&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type.&quot;;s:4:&quot;name&quot;;s:18:&quot;- Nicola Mustone -&quot;;}s:18:&quot;_1409741040249_249&quot;;a:2:{s:11:&quot;description&quot;;s:192:&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type.&quot;;s:4:&quot;name&quot;;s:18:&quot;- Nicola Mustone -&quot;;}}]]></items>
+	<status><![CDATA[1]]></status>
+	<title><![CDATA[What clien say ?]]></title>
+</testimonial>
+
+
+</sns_kalolia_cfg>
+	</default>
+</config>

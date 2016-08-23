@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <paypal_payments>
+                    <wps type="group" translate="label comment">
+                        <!--frontend_model>paypal/adminhtml_system_config_fieldset_deprecated</frontend_model-->
+                        <frontend_model>paypal/adminhtml_system_config_fieldset_payment</frontend_model>
+                    </wps>
+                </paypal_payments>
+            </groups>
+        </payment>
+    </sections>
+</config>

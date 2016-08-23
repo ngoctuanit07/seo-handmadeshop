@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <amseorichdata translate="label" module="amseorichdata">
+            <label>SEO Rich Data</label>
+            <tab>amasty</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>190518</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <product translate="label" module="amseorichdata">
+                    <label>Product</label>
+                    <expanded>1</expanded>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[See http://support.google.com/webmasters/answer/146750]]></comment>
+                        </enabled>
+
+                        <container_selector translate="label">
+                            <label>Container Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can specify chain of css selectors (only id, class attributes and tag names are allowed)]]></comment>
+                        </container_selector>
+
+                        <container_price_selector translate="label">
+                            <label>Price Container</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can specify chain of css selectors (only id, class attributes and tag names are allowed)]]></comment>
+                        </container_price_selector>
+
+                        <name_selector translate="label">
+                            <label>Name Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can specify chain of css selectors (only id, class attributes and tag names are allowed)]]></comment>
+                        </name_selector>
+
+                        <description_selector translate="label">
+                            <label>Description Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can specify chain of css selectors (only id, class attributes and tag names are allowed)]]></comment>
+                        </description_selector>
+                    </fields>
+                </product>
+
+                <rating translate="label" module="amseorichdata">
+                    <label>Reviews Rating</label>
+                    <expanded>0</expanded>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[See http://support.google.com/webmasters/answer/146645]]></comment>
+                        </enabled>
+                        <totals translate="label">
+                            <label>Show Total Count for</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>amseorichdata/source_reviews_totals</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </totals>
+                    </fields>
+                </rating>
+
+                <breadcrumbs translate="label">
+                    <label>Breadcrumbs</label>
+                    <expanded>0</expanded>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[See http://support.google.com/webmasters/answer/185417]]></comment>
+                        </enabled>
+                        <item_selector translate="label">
+                            <label>Item Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Relative to breadcrumbs block]]></comment>
+                        </item_selector>
+                        <url_selector translate="label">
+                            <label>Item Link Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Relative to breadcrumbs block]]></comment>
+                        </url_selector>
+                        <title_selector translate="label">
+                            <label>Title container Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Relative to breadcrumbs block]]></comment>
+                        </title_selector>
+                    </fields>
+                </breadcrumbs>
+
+                <organization translate="label">
+                    <label>Organization</label>
+                    <expanded>0</expanded>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[See http://support.google.com/webmasters/answer/146861]]></comment>
+                        </enabled>
+                        <container_selector translate="label">
+                            <label>Container Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can specify chain of css selectors (only id, class attributes and tag names are allowed)]]></comment>
+                        </container_selector>
+                        <name_selector translate="label">
+                            <label>Site Name Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can specify chain of css selectors (only id, class attributes and tag names are allowed)]]></comment>
+                        </name_selector>
+                        <logo_selector translate="label">
+                            <label>Logo Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can specify chain of css selectors (only id, class attributes and tag names are allowed)]]></comment>
+                        </logo_selector>
+                        <url_selector translate="label">
+                            <label>Site Link Selector</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[You can specify chain of css selectors (only id, class attributes and tag names are allowed)]]></comment>
+                        </url_selector>
+                    </fields>
+                </organization>
+                <category translate="label">
+                    <label>Category Page</label>
+                    <expanded>0</expanded>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Show average products rating and minimal price at the bottom of category page]]></comment>
+                        </enabled>
+                    </fields>
+                </category>
+            </groups>
+        </amseorichdata>
+    </sections>
+</config>

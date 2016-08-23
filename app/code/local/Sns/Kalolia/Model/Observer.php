@@ -1,0 +1,2 @@
+<?php
+class Sns_Kalolia_Model_Observer {	public function less_compile($observer) {		$design_package = Mage::getSingleton('core/design_package')->getPackageName();		if($design_package == 'sns_kalolia') Mage::helper('kalolia/data')->compileLess();	}}
